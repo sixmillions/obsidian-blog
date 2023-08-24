@@ -12,8 +12,9 @@
 
 
 ```yaml
+---
 title: 笔记标题
-slug: {{date}}-{{time:HH}}
+slug: "{{date}}-{{time:HH}}"
 description: 描述
 author: six
 created: "{{date}} {{time}}"
@@ -26,6 +27,7 @@ categories:
  - js
  - cloudflare
 dg-publish: false
+---
 ```
 
 点击右下角 Settings -> Templdates -> 选择刚才存放目录的文件夹
