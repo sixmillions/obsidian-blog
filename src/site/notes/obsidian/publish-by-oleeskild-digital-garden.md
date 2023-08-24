@@ -6,6 +6,7 @@
 
 使用 `Digital Obsidian Garden` 发布Obsidian笔记
 
+> https://dg-docs.ole.dev/
 ## 准备
 
 1. GitHub账号，并且申请一个token
