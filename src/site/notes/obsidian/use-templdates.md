@@ -14,11 +14,11 @@
 ```yaml
 ---
 title: 笔记标题
-slug: "{{date}}-{{time:HH}}"
+slug: xxx
 description: 描述
 author: six
-created: "{{date}} {{time}}"
-updated: "{{date}} {{time}}"
+created: "2023-08-24 08:08"
+updated: "2023-08-24 08:08"
 cover: https://picsum.photos/720/400
 tags:
  - obsidian
