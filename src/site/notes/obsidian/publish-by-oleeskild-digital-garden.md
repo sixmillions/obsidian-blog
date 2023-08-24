@@ -26,7 +26,7 @@ https://github.com/oleeskild/digitalgarden
 
 vercel会自动创建该Git仓库
 
-![](https://s.sixmillions.cn/ddd/nihao.png)
+![deploy](https://s.sixmillions.cn/img/2023/08/24/074904144.png)
 
 ## 下载插件
 
@@ -120,9 +120,16 @@ dg-publish: true
 }
 ```
 
+## 注意
 
+该网站使用  [Eleventy(11ty)](https://www.11ty.cn/) 生成，该模板不能出现类似于vue那种胡子语法
 
+即双大括号中间是变量名，否则部署的时候会报错
 
+```text
+[11ty] Original error stack trace: Template render error: (./src/site/notes/obsidian/use-templdates.md) [Line 14, Column 23]
+[11ty]   expected variable end
+```
 
-
+![](https://s.sixmillions.cn/img/2023/08/24/075311287.png)
 
