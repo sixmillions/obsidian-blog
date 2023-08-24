@@ -8,14 +8,16 @@
 
 新建模板笔记，例如，我需要在每一篇笔记之前增加front-matter
 
+![](https://s.sixmillions.cn/img/2023/08/24/073743352.png)
+
+
 ```yaml
----
 title: 笔记标题
 slug: {{date}}-{{time:HH}}
 description: 描述
 author: six
-created: {{date}} {{time}}
-updated: {{date}} {{time}}
+created: "{{date}} {{time}}"
+updated: "{{date}} {{time}}"
 cover: https://picsum.photos/720/400
 tags:
  - obsidian
@@ -24,7 +26,6 @@ categories:
  - js
  - cloudflare
 dg-publish: false
----
 ```
 
 点击右下角 Settings -> Templdates -> 选择刚才存放目录的文件夹
