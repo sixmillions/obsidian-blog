@@ -105,8 +105,9 @@
 
 ## obsidian-tasks-plugin
 
-任务管理插件
+任务管理插件  `Ctrl + P -> task`
 
+- [x] learn obsidian 📅 2023-08-28 ✅ 2023-08-28
 ## obsidian-git
 
 笔记同步到GIt
@@ -128,4 +129,12 @@
 - [[obsidian/use-templdates\|use-templdates]]
 
 { .block-language-dataview}
+
+## nldates-obsidian
+
+将单词转换成时间
+
+> https://github.com/argenos/nldates-obsidian
+
+开启后，输入 `@` 符号就会提示
 
