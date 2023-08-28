@@ -1,17 +1,7 @@
 ---
-title: obsidian插件
-slug: my-obsidian-plugins
-description: 常用插件介绍
-author: six
-created: "2023-08-28 08:30"
-updated: "2023-08-28 15:15"
-cover: https://picsum.photos/720/400
-tags:
- - obsidian
-categories:
- - obsidian
-dg-publish: true
+{"title":"obsidian插件","slug":"my-obsidian-plugins","description":"常用插件介绍","author":"six","created":"2023-08-28 08:30","updated":"2023-08-28 15:15","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/my-obsidian-plugins/","dgPassFrontmatter":true}
 ---
+
 ## 允许使用社区插件
 
 ![](https://s.sixmillions.cn/img/2023/08/28/005955483.png)
