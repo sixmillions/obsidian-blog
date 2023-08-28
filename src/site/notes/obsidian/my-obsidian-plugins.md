@@ -1,7 +1,17 @@
 ---
-{"title":"obsidian插件","slug":"my-obsidian-plugins","description":"常用插件介绍","author":"six","created":"2023-08-28 08:30","updated":"2023-08-28 15:15","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/my-obsidian-plugins/","dgPassFrontmatter":true}
+title: obsidian插件
+slug: my-obsidian-plugins
+description: 常用插件介绍
+author: six
+created: "2023-08-28 08:30"
+updated: "2023-08-28 15:15"
+cover: https://picsum.photos/720/400
+tags:
+ - obsidian
+categories:
+ - obsidian
+dg-publish: true
 ---
-
 ## 允许使用社区插件
 
 ![](https://s.sixmillions.cn/img/2023/08/28/005955483.png)
@@ -122,6 +132,7 @@
 
 数据查询插件
 
+- [[obsidian/00-readme\|00-readme]]
 - [[obsidian/my-obsidian-config\|my-obsidian-config]]
 - [[obsidian/my-obsidian-plugins\|my-obsidian-plugins]]
 - [[obsidian/obsidian-calendar-plugin\|obsidian-calendar-plugin]]
