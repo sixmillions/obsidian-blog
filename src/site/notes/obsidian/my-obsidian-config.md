@@ -1,22 +1,13 @@
 ---
-title: obsidian配置
-slug: my-obsidian-config
-description: 我的Obsidian配置
-author: six
-created: "2023-08-28 08:30"
-updated: "2023-08-28 15:15"
-cover: https://picsum.photos/720/400
-tags:
- - obsidian
-categories:
- - obsidian
-dg-publish: true
+{"title":"obsidian配置","slug":"my-obsidian-config","description":"我的Obsidian配置","author":"six","created":"2023-08-28 08:30","updated":"2023-08-28 15:15","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/my-obsidian-config/","dgPassFrontmatter":true}
 ---
+
 ## 配置上传到git
 
 ![](https://s.sixmillions.cn/img/2023/08/28/011515256.png)
 
 将上面的配置文件保存一下，方便下次obsidian初始化
+[[obsidian/00-readme\|00-readme]]
 ## 自定义快捷键
 
 1. 重新加载（会丢弃当前内容）`Ctrl + Shift + R`
