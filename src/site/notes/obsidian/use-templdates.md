@@ -1,5 +1,5 @@
 ---
-{"title":"obsidian中使用模板","slug":"use-templdates","description":"在OB中使用模板，快速创建内容","author":"six","created":"2023-08-24 15:15","updated":"2023-08-24 15:15","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/use-templdates/","dgPassFrontmatter":true}
+{"title":"obsidian中使用模板","slug":"use-templdates","description":"在OB中使用模板，快速创建内容","author":"six","created":"2023-08-24","updated":"2023-08-29","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/use-templdates/","dgPassFrontmatter":true}
 ---
 
 ## 模板简创建
