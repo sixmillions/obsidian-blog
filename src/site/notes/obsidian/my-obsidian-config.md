@@ -1,5 +1,5 @@
 ---
-{"title":"obsidian配置","slug":"my-obsidian-config","description":"我的Obsidian配置","author":"six","created":"2023-08-28 08:30","updated":"2023-08-28 15:15","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/my-obsidian-config/","dgPassFrontmatter":true}
+{"title":"obsidian配置","slug":"my-obsidian-config","description":"我的Obsidian配置","author":"six","created":"2023-08-28","updated":"2023-08-28","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/my-obsidian-config/","dgPassFrontmatter":true}
 ---
 
 ## 配置上传到git

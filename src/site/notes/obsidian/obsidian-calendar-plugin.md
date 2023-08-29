@@ -1,5 +1,5 @@
 ---
-{"title":"obsidian-calendar插件使用","slug":"obsidian-calendar-plugin","description":"calendar插件使用","author":"six","created":"2023-08-28 08:30","updated":"2023-08-28 15:15","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/obsidian-calendar-plugin/","dgPassFrontmatter":true}
+{"title":"obsidian-calendar插件使用","slug":"obsidian-calendar-plugin","description":"calendar插件使用","author":"six","created":"2023-08-28","updated":"2023-08-28","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/obsidian-calendar-plugin/","dgPassFrontmatter":true}
 ---
 
 ## 下载地址
