@@ -1,5 +1,5 @@
 ---
-{"title":"obsidian发布Web","slug":"publish-by-oleeskild-digital-garden","description":"通过oleeskild提供的模板(digitalgarden)，将笔记部署到vercel，方便分享和访问","author":"six","created":"2023-08-23 08:08","cover":"https://s.sixmillions.cn/img/logo/logo.png","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"updated":"2023-08-24 08:08","permalink":"/obsidian/publish-by-oleeskild-digital-garden/","dgPassFrontmatter":true}
+{"title":"obsidian发布Web","slug":"publish-by-oleeskild-digital-garden","description":"通过oleeskild提供的模板(digitalgarden)，将笔记部署到vercel，方便分享和访问","author":"six","created":"2023-08-23","updated":"2023-08-24","cover":"https://s.sixmillions.cn/img/logo/logo.png","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/publish-by-oleeskild-digital-garden/","dgPassFrontmatter":true}
 ---
 
 ## 发布笔记
@@ -139,4 +139,10 @@ dg-publish: true
 ```
 
 ![](https://s.sixmillions.cn/img/2023/08/24/075311287.png)
+
+## 修改头像
+
+修改默认favicon，如果原来不配置会使用默认的，我们修改成自己仓库的
+
+![](https://s.sixmillions.cn/img/2023/08/28/075701283.png)
 
