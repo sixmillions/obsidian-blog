@@ -285,6 +285,17 @@
         resultsDiv.innerHTML = loadingSvg;
         //let searchRequest = await fetch(`/api/search?term=${encodeURIComponent(search)}`);
         //let results = await searchRequest.json();
+        let searchRequest = await fetch("https://zinc.sixmillions.cn/api/blog/_search", {
+            "mode": "cors",
+            "method": "POST",
+            "headers": {
+                "authorization": "Basic YWRtaW46Y25UUkUxNDcr",
+                "content-type": "application/json"
+            },
+            "body": '{"search_type": "match", "query": {"term": "天价", "field": "_all"}, "sort_fields": ["-_score"],"from": 0,"max_results": 20}'
+            });
+        let xxx = await searchRequest.json();
+        console.log(111, xxx)
         let results = offlineSearch(search);
         let resultsHTML = '';
         if (!results.length) {
