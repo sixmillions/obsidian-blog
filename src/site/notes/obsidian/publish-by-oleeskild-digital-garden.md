@@ -146,3 +146,78 @@ dg-publish: true
 
 ![](https://s.sixmillions.cn/img/2023/08/28/075701283.png)
 
+## DIY
+
+### 修改search
+
+使用[[default/zincsearch\|zincsearch]]替代
+
+原理：
+1. 删除旧索引
+2. 创建新索引
+3. 通过 `/api/searchIndex.json` 接口获取文章数据
+4. 将数据插入新的索引
+
+定时任务，每天凌晨运行，数据同步到zincsearch脚本
+
+```bash
+#!/bin/bash
+
+HOST=https://zinc.sixmillions.cn
+BLOG_HOST=https://blog.6bw.fun
+INDEX=blog
+TOKEN=xxxx
+
+# 删除索引
+curl -X 'DELETE' \
+  "${HOST}/api/index/${INDEX}" \
+  -H 'accept: application/json' \
+  -H "authorization: Basic ${TOKEN}"
+
+# 创建索引
+curl -X 'POST' \
+  "${HOST}/api/index" \
+  -H 'accept: application/json' \
+  -H "authorization: Basic ${TOKEN}" \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "'${INDEX}'",
+  "storage_type": "disk",
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "default": {
+          "type": "gse_standard"
+        }
+      }
+    }
+  },
+  "mappings": {}
+}'
+
+
+# 获取数据
+data=$(curl -s "${BLOG_HOST}/searchIndex.json")
+
+# 构建请求数据
+request_data='{
+  "index": "'${INDEX}'",
+  "records": '$data'
+}'
+
+# 发送请求
+curl -X 'POST' \
+  "${HOST}/api/_bulkv2" \
+  -H 'accept: application/json' \
+  -H "authorization: Basic ${TOKEN}" \
+  -H 'Content-Type: application/json' \
+  -d "$request_data"
+```
+
+注意：**token要有相应权限**
+
+token就是 `username:password` 做base64，可以使用在线工具
+
+> https://www.sojson.com/base64.html
+
+
