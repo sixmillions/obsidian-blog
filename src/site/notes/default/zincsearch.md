@@ -33,7 +33,7 @@
 
 j解压后运行
 
-```cmd
+```powershell
 set ZINC_FIRST_ADMIN_USER=admin
 set ZINC_FIRST_ADMIN_PASSWORD=admin
 mkdir data
@@ -61,7 +61,7 @@ vim docker-compose.yml
 
 `docker-compose.yml`
 
-```yaml
+```yml
 version: "3"
 
 services:
@@ -183,7 +183,7 @@ swagger接口地址
 
 `zincsearch.conf`
 
-```
+```nginx
 server {
   listen                443;
   proxy_connect_timeout 60s;
@@ -195,6 +195,9 @@ server {
   client_max_body_size 1024M;
 
   location / {
+      # https需要转一下
+      proxy_redirect http:// https://;
+      # 跨域配置
       add_header Access-Control-Allow-Origin *;
       proxy_set_header Host $host;
       proxy_set_header Origin-Host $host;
