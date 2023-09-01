@@ -216,3 +216,23 @@ server {
 ```
 
 生效配置：`nginx -s reload`
+
+## 中文分词配置
+
+> https://zincsearch-docs.zinc.dev/api/index/analyze/#chinese-analyzers
+
+创建索引的时候配置一下
+
+```json
+{
+  "analysis": {
+    "analyzer": {
+      "default": {
+        "type": "gse_standard"
+      }
+    }
+  }
+}
+```
+
+![](https://s.sixmillions.cn/img/2023/09/01/025845684.png)
