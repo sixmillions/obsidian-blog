@@ -123,9 +123,11 @@
 数据查询插件
 
 - [[obsidian/00-readme\|00-readme]]
+- [[obsidian/markdown-guide\|markdown-guide]]
 - [[obsidian/my-obsidian-config\|my-obsidian-config]]
 - [[obsidian/my-obsidian-plugins\|my-obsidian-plugins]]
 - [[obsidian/obsidian-calendar-plugin\|obsidian-calendar-plugin]]
+- [[obsidian/obsidian-markdown\|obsidian-markdown]]
 - [[obsidian/publish-by-oleeskild-digital-garden\|publish-by-oleeskild-digital-garden]]
 - [[obsidian/use-templdates\|use-templdates]]
 
