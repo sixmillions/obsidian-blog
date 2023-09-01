@@ -1,4 +1,4 @@
-<script src="https://unpkg.com/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
+<!--暂时不用离线全文检索<script src="https://unpkg.com/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>-->
 <script>
     document.addEventListener('DOMContentLoaded', init, false);
     document.addEventListener('DOMContentLoaded', setCorrectShortcut, false);
@@ -137,24 +137,24 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '{{meta.buildDate|isoDate}}';
-        let shouldFetch = true;
-        if(localStorage.getItem("searchIndex")) {
-            let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
-            if(date === searchIndexDate){
-                shouldFetch = false;
-                let index = createIndex(docs);
-                window.docs = docs
-                window.index = index;
-            }        
-        }
-        if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v={{meta.buildDate|isoDate}}')).json();
-            let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '{{meta.buildDate|isoDate}}', docs}));
-            window.docs = docs
-            window.index = index;
-        }
+        //const searchIndexDate = '{{meta.buildDate|isoDate}}';
+        //let shouldFetch = true;
+        //if(localStorage.getItem("searchIndex")) {
+        //    let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
+        //    if(date === searchIndexDate){
+        //        shouldFetch = false;
+        //        let index = createIndex(docs);
+        //        window.docs = docs
+        //        window.index = index;
+        //    }        
+        //}
+        //if(shouldFetch){
+        //    let docs = await(await fetch('/searchIndex.json?v={{meta.buildDate|isoDate}}')).json();
+        //    let index = createIndex(docs);
+        //    localStorage.setItem("searchIndex", JSON.stringify({date: '{{meta.buildDate|isoDate}}', docs}));
+        //    window.docs = docs
+        //    window.index = index;
+        //}
 
         //open searchmodal when ctrl + k is pressed, cmd + k on mac
         document.addEventListener('keydown', (e) => {
@@ -254,7 +254,8 @@
             }
         });
 
-        const debouncedSearch = debounce(search, 200, false);
+        // 防抖
+        const debouncedSearch = debounce(search, 500, false);
         field = document.querySelector('#term');
         field.addEventListener('keydown', (e) => {
             if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') {
@@ -285,7 +286,10 @@
         resultsDiv.innerHTML = loadingSvg;
         //let searchRequest = await fetch(`/api/search?term=${encodeURIComponent(search)}`);
         //let results = await searchRequest.json();
-        let searchRequest = await fetch("https://zinc.sixmillions.cn/api/blog/_search", {
+        // 离线检索
+        //let results = offlineSearch(search);
+        // 检索接口
+        let searchResponse = await fetch("https://zinc.sixmillions.cn/api/blog/_search", {
             "method": "POST",
             "headers": {
                 "authorization": "Basic YmxvZzpQYXNzMTIzNA==",
@@ -302,22 +306,15 @@
                 max_results: 20
             })
         });
-        let searchJson = await searchRequest.json();
-        const docs = searchJson.hits.hits.map(hit => ({
+        let searchResJson = await searchResponse.json();
+        // 组织查询结果
+        let results = searchResJson.hits.hits.map(hit => ({
             title: hit._source.title,
             date: hit._source.date,
             url: hit._source.url,
             content: hit._source.content,
             tags: hit._source.tags
         }));
-
-        const formattedData = {
-            date: new Date().toISOString(),
-            docs: docs
-        };
-        
-        console.log(111, formattedData)
-        let results = offlineSearch(search);
         let resultsHTML = '';
         if (!results.length) {
             let resultParagraph = document.createElement("p");
