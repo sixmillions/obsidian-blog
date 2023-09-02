@@ -131,6 +131,7 @@
 - [[obsidian/obsidian-markdown\|obsidian-markdown]]
 - [[obsidian/obsidian-ppt\|obsidian-ppt]]
 - [[obsidian/obsidian-qa\|obsidian-qa]]
+- [[obsidian/obsidian-sync\|obsidian-sync]]
 - [[obsidian/publish-by-oleeskild-digital-garden\|publish-by-oleeskild-digital-garden]]
 - [[obsidian/use-templdates\|use-templdates]]
 
