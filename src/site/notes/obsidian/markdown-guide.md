@@ -256,7 +256,6 @@ $$
 - [ ] 未完成任务名
 - [x] 已完成任务名
 
-
 ---
 ## 跳转到某个标题
 
@@ -291,7 +290,11 @@ graph LR
 	A --> C[结束节点2]
 ```
 
+## 上下标
 
+a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+
+CO<sub>2</sub>
 # obsidian支持的其他语法
 
 [[obsidian/obsidian-markdown\|obsidian-markdown]]
@@ -299,3 +302,4 @@ graph LR
 # 更多语法
 
 [帮助]([Editing and previewing Markdown - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Editing+and+previewing+Markdown))
+
