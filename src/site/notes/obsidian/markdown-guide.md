@@ -276,6 +276,13 @@ $$
 
 --- 
 
+## 上下标
+
+通过 `<sub>` 和 `<sup> 标签来实现下标和上标
+
+a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+
+CO<sub>2</sub>
 
 # obsidian支持的其他语法
 
