@@ -1,5 +1,5 @@
 ---
-{"title":"obsidian问题","slug":"obsidian-qa","description":"obsidian使用中遇到的小问题","author":"six","created":"2023-09-02","updated":"2023-09-02","cover":"https://picsum.photos/720/400","tags":["obsidian"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/obsidian-qa/","dgPassFrontmatter":true}
+{"title":"obsidian问题","slug":"obsidian-qa","description":"obsidian使用中遇到的小问题","author":"six","created":"2023-09-02","updated":"2023-09-02","cover":"https://picsum.photos/720/400","tags":["obsidian","QA"],"categories":["obsidian"],"dg-publish":true,"permalink":"/obsidian/obsidian-qa/","dgPassFrontmatter":true}
 ---
 
 ## 无法识别复制的表格
