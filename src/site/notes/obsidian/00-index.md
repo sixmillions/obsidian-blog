@@ -13,6 +13,7 @@
 - [[obsidian/obsidian-markdown\|obsidian-markdown]]: obsidian markdown语法扩展
 - [[obsidian/obsidian-ppt\|obsidian-ppt]]: obsidian ppt 演示
 - [[obsidian/obsidian-qa\|obsidian-qa]]: obsidian问题
+- [[obsidian/obsidian-sync\|obsidian-sync]]: obsidian笔记同步
 - [[obsidian/publish-by-oleeskild-digital-garden\|publish-by-oleeskild-digital-garden]]: obsidian发布Web
 - [[obsidian/use-templdates\|use-templdates]]: obsidian中使用模板
 
