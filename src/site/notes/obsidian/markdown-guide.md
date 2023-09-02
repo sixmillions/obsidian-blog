@@ -17,6 +17,10 @@
 
 ###### 六级标题
 
+正文
+
+<span id="target1">跳转目的地</span>
+
 ---
 
 # 文字式样
@@ -77,8 +81,18 @@
 > - 引用嵌套无序列表
 > - 引用嵌套无序列表
 
----
+> NOTE:
+> 
+> 1. 提示
+> 2. 提示
 
+---
+# 表情
+
+可以使用windowns自带的表情（`win + .`）
+
+😄 😆 😵 😭 😰 😅  😢 😤 😍 😌
+👍 👎 💯 👏 🔔 🎁 ❓ 💣 ❤️ ☕️ 🌀 🙇 💋 🙏 💢
 # 分割线
 
 用三个"-"或者三个星号表示分割线，如下
@@ -93,6 +107,8 @@
 超级链接演示
 
 [链接名字](https://www.baidu.com)
+
+邮件：[username@gmail.com](mailto:username@gmail.com)
 
 ---
 
@@ -191,6 +207,7 @@ b = 5
 print(max(a, b))
 ```
 
+`行内代码块演示 docker ps -a`
 
 ---
 
@@ -299,3 +316,7 @@ CO<sub>2</sub>
 # obsidian支持的其他语法
 
 [[obsidian/obsidian-markdown\|obsidian-markdown]]
+
+# 更多语法
+
+[帮助]([Editing and previewing Markdown - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Editing+and+previewing+Markdown))
