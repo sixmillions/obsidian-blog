@@ -110,3 +110,68 @@
 邮件：[username@gmail.com](mailto:username@gmail.com)
 
 ---
+
+## 图片
+
+图片演示
+![我是百度图片](https://six-img.sh1a.qingstor.com/202301/20230115125615467qvf9.png)
+
+调整图片大小演示，实现代码如下，就是img标签加width，实现等比例缩放
+
+```html
+<img src="https://six-img.sh1a.qingstor.com/202301/20230115125615467qvf9.png" alt="百度logo" width="50">
+```
+
+<img src="https://six-img.sh1a.qingstor.com/202301/20230115125615467qvf9.png" alt="百度log" width="250">
+
+图注演示，实现代码如下
+
+```html
+<center> 
+	<img src="https://six-img.sh1a.qingstor.com/202301/20230115125615467qvf9.png" alt="百度logo" width="400" >
+	<br>
+	<div style="color:#999;">我是图注</div> 
+</center>
+```
+
+<center> 
+	<img src="https://six-img.sh1a.qingstor.com/202301/20230115125615467qvf9.png" alt="百度logo" width="400" >
+	<br>
+	<div style="color:#999;">我是图注</div> 
+</center>
+
+---
+## 其他链接表示
+
+用大于小于号
+
+<https://markdown.com.cn>
+
+<fake@example.com>
+
+## 格式化链接
+
+跟加粗倾斜混合使用 [***百度***](www.baidu.com)
+
+跟行内代码一起使用 [`GitHub`](github.com)
+
+# 表格
+
+表格演示，实现方式
+{ #12c878}
+
+
+```markdown
+|左对齐|居中对齐|右对齐| 
+|:----|:----:|---:|
+|左|中|右|
+```
+
+具体演示：
+
+|左对齐|居中对齐|右对齐| 
+|:----|:----:|---:|
+|左|中|右|
+|你好|hello|こんにちは|
+
+---
