@@ -1,17 +1,7 @@
 ---
-title: zincsearch搜索引擎
-slug: zincsearch
-description: 相对于ES，zinc是一个轻量的全文搜索引擎
-author: six
-created: 2023-08-31
-updated: 2023-08-31
-cover: https://picsum.photos/720/400
-tags:
- - search
-categories:
- - ddefault
-dg-publish: true
+{"title":"zincsearch搜索引擎","slug":"zincsearch","description":"相对于ES，zinc是一个轻量的全文搜索引擎","author":"six","created":"2023-08-31","updated":"2023-08-31","cover":"https://picsum.photos/720/400","tags":["search"],"categories":["ddefault"],"dg-publish":true,"permalink":"/default/zincsearch/","dgPassFrontmatter":true}
 ---
+
 ## Source
 
 > 文档地址：https://zincsearch-docs.zinc.dev
