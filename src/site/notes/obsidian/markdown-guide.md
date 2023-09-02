@@ -18,8 +18,6 @@
 
 正文
 
-<span id="target1">跳转目的地</span>
-
 ---
 
 # 文字式样
@@ -260,15 +258,51 @@ $$
 
 
 ---
-## 页面跳转
+## 跳转到某个标题
 
-1. obsidian使用大纲跳转
-2. obsidian使用 \[\[#标题名\]\] 实现，例如：[[obsidian/markdown-guide#一级标题\|#一级标题]]
-4. 使用类似插件 Dynamic Table of Content
+1. 使用obsidian左边大纲跳转
+2. 用链接跳过去
 
-普通markdown需要定义锚点，或者跳转到某个标题，obsidian不支持
-定义锚点
+```markdown
+格式：井号和名字中间没有空格
+[点击跳转](#标题名)
 
-```html
-<span id="target1">跳转目的地</span>
+例如：
+[点击跳转](#表格)
+[点击跳转](#引用)
 ```
+
+[点击跳转到标题名是”列表“附近](#列表)
+
+--- 
+
+## 流程图
+
+用的很少，不过多介绍，可以使用drawo.io代替
+
+```mermaid
+graph TD
+    开始 --> 结束
+```
+
+```mermaid
+graph LR
+	A[开始节点] --> B[结束节点1]
+	A --> C[结束节点2]
+```
+
+## 上下标
+
+通过 `<sub>` 和 `<sup> 标签来实现下标和上标
+
+a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+
+CO<sub>2</sub>
+
+# obsidian支持的其他语法
+
+[[obsidian/obsidian-markdown\|obsidian-markdown]]
+
+# 更多语法
+
+[帮助]([Editing and previewing Markdown - Obsidian Help](https://help.obsidian.md/Editing+and+formatting/Editing+and+previewing+Markdown))
