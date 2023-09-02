@@ -263,7 +263,7 @@ $$
 ## 页面跳转
 
 1. obsidian使用大纲跳转
-2. obsidian使用 `[[#标题名]]` 实现，例如：[[obsidian/markdown-guide#一级标题\|#一级标题]]
+2. obsidian使用 \[\[#标题名\]\] 实现，例如：[[obsidian/markdown-guide#一级标题\|#一级标题]]
 4. 使用类似插件 Dynamic Table of Content
 
 普通markdown需要定义锚点，或者跳转到某个标题，obsidian不支持
