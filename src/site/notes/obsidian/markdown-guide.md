@@ -276,13 +276,21 @@ $$
 
 --- 
 
-## 上下标
+## 流程图
 
-通过 `<sub>` 和 `<sup> 标签来实现下标和上标
+用的很少，不过多介绍，可以使用drawo.io代替
 
-a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+```mermaid
+graph TD
+    开始 --> 结束
+```
 
-CO<sub>2</sub>
+```mermaid
+graph LR
+	A[开始节点] --> B[结束节点1]
+	A --> C[结束节点2]
+```
+
 
 # obsidian支持的其他语法
 
