@@ -141,6 +141,7 @@
 </center>
 
 ---
+
 ## 其他链接表示
 
 用大于小于号
@@ -175,3 +176,53 @@
 |你好|hello|こんにちは|
 
 ---
+
+# 代码块
+
+markdown中的代码演示
+{ #memo20230116205251}
+
+
+java代码
+
+```java
+public static void main(String[] args) {  
+    System.out.println("Hello World");  
+}
+```
+
+其他语法
+
+```python
+def max(a, b): 
+	if a > b: 
+		return a 
+	else: 
+		return b 
+
+# 调用
+a = 4 
+b = 5 
+print(max(a, b))
+```
+
+`行内代码块演示 docker ps -a`
+
+---
+
+# 特殊字符
+
+特殊字符需要转义，用一个反斜杠实现
+
+\\ 反斜线是特殊符号，也需要转移，所以两条斜线显示斜线  
+\` 反引号  
+\* 星号  
+\_ 下划线  
+\{\} 花括号   
+\[\] 方括号   
+\(\) 小括号   
+\# 井字号   
+\+ 加号   
+\- 减号   
+\. 英文句点   
+\! 英文感叹号
